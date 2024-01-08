@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBD Code Finder</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" type="text/javascript"></script>
+    <script src="inputMasks.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/d06c6dd0a7.js" crossorigin="anonymous"></script>
+</head>
+<body onload="setUpWordsArray()">
+    <div class="navbar">
+        <div class="menu-item">
+            <h1 <i class="fa-solid fa-house"></i> </h1>
+            <h1 class="title" onClick="document.getElementById('HEADER').scrollIntoView();">  Home</h1>
+        </div>
+        <div class="menu-item">
+            <h1 onClick="document.getElementById('ABOUT').scrollIntoView();" <i class="fa-regular fa-address-card"></i> </h1>
+            <h1 class="title" onClick="document.getElementById('ABOUT').scrollIntoView();">  About</h1>
+        </div>
+        <div class="menu-item">
+            <h1 <i onClick="document.getElementById('enter-code').scrollIntoView();" class="fa-regular fa-square-plus"></i> </h1>
+            <h1 class="title" onClick="document.getElementById('enter-code').scrollIntoView();" style="font-size: 1.5rem;">  Enter Code</h1>
+        </div>
+        <div class="menu-item">
+            <h1 <i onClick="document.getElementById('CONTACT-US').scrollIntoView();" class="fa-regular fa-envelope"></i> </h1>
+            <h1 onClick="document.getElementById('CONTACT-US').scrollIntoView();" class="title">  Contact</h1>
+        </div>
+    </div>
+    <div class="content">
+        
+    
+    
+    
+        <div class="random-text">
+            <div class="home">
+                 <h1 class="header" id="HEADER">OBD CODE FINDER</h1>
+                <div class="info-box">
+                    <h1>What is an OBD Code</h1>
+                    <p>They’re five-digit codes and are made up of four different subsets of codes that indicate where in the vehicle the malfunction lies</p>
+                    <p class="letter-desc"> The letter in the DTC tells you if the code is specific to the vehicle manufacturer or a generic code that applies
+                         to all OBD-II systems. The first of these subsets is the powertrain, or P codes, and is the largest of the four categories. This is followed by network and integration (U), body (B), and chassis (C) codes.</p>
+                    <p class="number-desc">The last three numbers tell you specific information on the vehicle system or circuit that is running into trouble.</p>
+                    <h3>Example: <span id="letter">P</span><span class="numbers">1234</span></h3>
+                </div>
+
+                <h2>Having Issues? Enter a <span class="OBD-info" style="color: rgb(243, 110, 27)">valid OBD code</span> below to find out whats wrong...</h2>
+                <div class="info-box smaller">
+                    <h1>Valid OBD Codes</h1>
+                    <div class="word"></div>
+                </div>
+            </div>
+        
+
+            <div class="about">
+                <div class="aboutSectionContent">
+                    
+                    <h1 id="invisible" > asd</h1>
+                    <h1 id="invisible" >asd</h1>
+                    <h1 class="header" id="ABOUT"> About</h1>
+                
+                
+                    <div class="flex">
+                        <div class="text">
+                            <h1>The purpose of the OBD Finder is to shorten the process of fixing engine errors and providing links to fix the problem.</h1>
+                            <a onclick="document.getElementById('enter-code').scrollIntoView();">
+                                <button  id="aboutBTN">Try it out!</button>
+                            </a>
+                            
+                        </div>
+                    
+                        <img src="images/undraw_automobile_repair_ywci copy.svg" alt="car_svg">
+                    </div>
+                </div>
+                <h1 id="invisible" > asd</h1>
+                <h1 id="invisible" >asd</h1>
+            </div>
+
+            <div class="enterCode">
+                <h1 id="enter-code">ENTER CODE <i class="fa-solid fa-magnifying-glass"></i> </h1>
+                <div class="input-container">
+                    <input class="inputArea">
+                    <button class="submitButton"><i class="fa-regular fa-square-caret-right"></i></button>
+                </div>
+                
+                <h1 id="invisible" > asd</h1>
+                <h1 id="invisible" >asd</h1>
+                <h1 id="invisible" > asd</h1>
+                <h1 id="invisible" >asd</h1>
+            </div>
+
+            <div class="contactForm">
+                <h1 id="CONTACT-US">Contact Us</h1>
+                <form class="cf">
+                     <div class="half left cf">
+                        <input type="text" id="input-name" placeholder="Name">
+                        <input type="email" id="input-email" placeholder="Email address">
+                        <input type="text" id="input-subject" placeholder="Subject">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    </div>  
+                    <input type="submit" value="Submit" id="input-submit">
+                </form>
+            </div>
+           
+        </div>
+    </div>
+    
+   
+</body>
+
+</html>
